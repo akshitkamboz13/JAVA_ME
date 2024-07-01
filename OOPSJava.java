@@ -15,7 +15,7 @@
 //8. Multithreaded: Java is multithreaded because it is capable of executing two or more threads simultaneously.
 
 //Java Environment Setup:
-//1. Install JDK: To install Java, you need to download JDK (Java Development Kit) from the Oracle website.
+//1. Install J DK: To install Java, you need to download JDK (Java Development Kit) from the Oracle website.
 //2. Set Path: After installing JDK, you need to set the path of the JDK.
 //3. Install IDE: To write and execute Java programs, you need an IDE (Integrated Development Environment) like Eclipse, NetBeans, etc.
 
