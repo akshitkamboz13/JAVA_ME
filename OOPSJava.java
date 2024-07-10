@@ -1239,7 +1239,7 @@ class node {
 
         node t = n;
         while (t.next != null) {
-            t = t.next;
+           t =  t.next;
         }
         t.next = temp;
         return n;
@@ -1248,7 +1248,7 @@ class node {
     void display(node n) {
         System.out.println("my list");
         while (n != null) {
-            System.out.println(n.data);
+            System.out.println(n.data + "  " + n.next);
             n = n.next;
         }
     }

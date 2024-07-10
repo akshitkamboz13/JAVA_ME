@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "Revise.QuickSort",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "linkedlist",
+            "request": "launch",
+            "mainClass": "linkedlist",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "HeapSort",
+            "request": "launch",
+            "mainClass": "HeapSort",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "checkBit",
+            "request": "launch",
+            "mainClass": "checkBit",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
             "name": "InsertionSort",
             "request": "launch",
             "mainClass": "Revise.InsertionSort",

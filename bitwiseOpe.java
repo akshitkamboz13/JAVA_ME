@@ -161,4 +161,103 @@ class Qustions{
 //4. Code simplification - bitwise operators can simplify the code by reducing the number of conditional statements or loops required to perform certain operations.
 
 
+//check bit at a given position
+class checkBit{
+    public static void main(String[] args) {
+        int num = 5;
+        int pos = 2;
+        int mask = 1<<pos;
+        if((num&mask) != 0){
+            System.out.println("1");
+        }
+        else{
+            System.out.println("0");
+        }
+    }
+}
+
+//set bit at a given position
+class setBit{
+    public static void main(String[] args) {
+        int num = 5;
+        int pos = 1;
+        int mask = 1<<pos;
+        num = num|mask;
+        System.out.println(num);
+    }
+}
+
+//clear bit at a given position
+class clearBit{
+    public static void main(String[] args) {
+        int num = 5;
+        int pos = 2;
+        int mask = ~(1<<pos);
+        num = num&mask;
+        System.out.println(num);
+    }
+}
+
+//update bit at a given position
+class updateBit{
+    public static void main(String[] args) {
+        int num = 5;
+        int pos = 1;
+        int value = 1;
+        int mask = ~(1<<pos);
+        num = num&mask;
+        num = num|(value<<pos);
+        System.out.println(num);
+    }
+}
+
+//clear all bits from the rightmost set bit
+class clearRightMostSetBit{
+    public static void main(String[] args) {
+        int num = 10;
+        int mask = num-1;
+        num = num&mask;
+        System.out.println(num);
+    }
+}
+
+//clear all bits from the leftmost set bit
+class clearLeftMostSetBit{
+    public static void main(String[] args) {
+        int num = 10;
+        int mask = 1;
+        while((num&mask) == 0){
+            mask = mask<<1;
+        }
+        mask = mask-1;
+        num = num&mask;
+        System.out.println(num);
+    }
+}
+
+//check if a number is power of 2
+class powerOf2{
+    public static void main(String[] args) {
+        int num = 16;
+        if((num&(num-1)) == 0){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+    }
+}
+
+//count number of set bits
+class countSetBits{
+    public static void main(String[] args) {
+        int num = 10;
+        int count = 0;
+        while(num>0){
+            count++;
+            num = num&(num-1);
+        }
+        System.out.println(count);
+    }
+}
 
