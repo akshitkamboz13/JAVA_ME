@@ -6,6 +6,132 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinaryTree",
+            "request": "launch",
+            "mainClass": "tree.BinaryTree",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "Queue2",
+            "request": "launch",
+            "mainClass": "Queue2",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "Queue",
+            "request": "launch",
+            "mainClass": "Queue",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "mod",
+            "request": "launch",
+            "mainClass": "mod",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "LL",
+            "request": "launch",
+            "mainClass": "Revise.LL",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "let22",
+            "request": "launch",
+            "mainClass": "Revise.let22",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "let",
+            "request": "launch",
+            "mainClass": "Revise.let",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "InputArray",
+            "request": "launch",
+            "mainClass": "Revise.InputArray",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "DoublyLinked",
+            "request": "launch",
+            "mainClass": "Revise.DoublyLinked",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "concatLargeArray",
+            "request": "launch",
+            "mainClass": "Revise.concatLargeArray",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "DoubleLinkedList",
+            "request": "launch",
+            "mainClass": "DoubleLinkedList",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "testtttt",
+            "request": "launch",
+            "mainClass": "Revise.testtttt",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "Empty",
+            "request": "launch",
+            "mainClass": "Revise.Empty",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "SubSet",
+            "request": "launch",
+            "mainClass": "Revise.SubSet",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "Revise.Fibonacci",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "recursion",
+            "request": "launch",
+            "mainClass": "Revise.recursion",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
+            "name": "revstr2",
+            "request": "launch",
+            "mainClass": "revstr2",
+            "projectName": "JavaClass_146d3cf"
+        },
+        {
+            "type": "java",
             "name": "QuickSort",
             "request": "launch",
             "mainClass": "Revise.QuickSort",

@@ -199,6 +199,24 @@ class arrlist {
         System.out.println(arr);
     }
 }
+//all the methods of arraylist
+//add
+//remove
+//add at specific index
+//set at specific index
+//get
+//size
+//contains
+//indexof
+//isempty
+//clear
+//arraylist of different type
+//arraylist of string
+//arraylist of integer
+//arraylist of double
+//arraylist of float
+
+
 
 //declaring arraylist of different type
 //add elements
@@ -341,3 +359,54 @@ class palendrome2 {
     }
 }
 
+//Modeule of 5 % 4 = 1 and 4 % 5 = 4
+class mod {
+    public static void main(String[] args) {
+        int num = 4;
+        int mod = num % 5;
+        System.out.println(mod);
+        int[] arr = {1,2,3,4,5};
+        Arrays.sort(arr);
+        System.out.println(arr);
+
+        StringBuilder str = new StringBuilder("Hellol");
+        str.substring(0, str.length()-1);
+    }
+}
+
+class Solution {
+    public int reverse(int x) {
+        StringBuilder str = new StringBuilder(x);
+        if(x>=0){
+            str.reverse();
+        }
+        else{
+            str.reverse();
+            str.insert(0, "-");
+            str.deleteCharAt(str.length()-1);
+        }
+        return Integer.parseInt(str.toString());
+    }
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.reverse(123));
+    }
+}
+
+class Solution3 {
+    public int myAtoi(String s) {
+        StringBuilder str = new StringBuilder();
+        for(int i = 0; i<s.length(); i++){
+            if(s.charAt(i) == ' '){
+                continue;
+            }
+            else if(s.charAt(i) == '+' || s.charAt(i) == '-' ){
+                str = str.append(s.charAt(i));
+            }
+            else{
+                break;
+            }
+        }
+        return Integer.parseInt(str.toString());
+    }
+}

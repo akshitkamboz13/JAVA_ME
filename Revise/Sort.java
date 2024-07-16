@@ -107,3 +107,91 @@ class QuickSort{
 }
 
 
+//Merge Sort
+class MergeSort{
+    public static void main(String[] args) {
+        int[] arr = {7,8,3,2,1};
+        mergeSort(arr, 0, arr.length-1);
+
+        for(int i : arr){
+            System.out.print(i + " ");
+        }
+    }
+    public static void mergeSort(int[] arr, int low, int high){
+        if(low<high){
+            int mid = (low+high)/2;
+            mergeSort(arr, low, mid);
+            mergeSort(arr, mid+1, high);
+            merge(arr, low, mid, high);
+        }
+    }
+    public static void merge(int[] arr, int low, int mid, int high){
+      int[] srr = new int[high+low+1];
+        int i = low;
+        int j = mid+1;
+        int k = low;
+        while(i<=mid && j<=high){
+            if(arr[i]<arr[j]){
+                srr[k] = arr[i];
+                i++;
+            }else{
+                srr[k] = arr[j];
+                j++;
+            }
+            k++;
+        }
+        while(i<=mid){
+            srr[k] = arr[i];
+            i++;
+            k++;
+        }
+        while(j<=high){
+            srr[k] = arr[j];
+            j++;
+            k++;
+        }
+        for(int p = low; p<=high; p++){
+            arr[p] = srr[p];
+        }
+    }
+}
+
+//Heap Sort
+class HeapSort{
+    public static void main(String[] args) {
+        int[] arr = {7,8,3,2,1};
+        heapSort(arr);
+        for(int i : arr){
+            System.out.print(i + " ");
+        }
+    }
+    public static void heapSort(int[] arr){
+        int n = arr.length;
+        for(int i = n/2-1; i>=0; i--){
+            heapify(arr, n, i);
+        }
+        for(int i = n-1; i>0; i--){
+            int temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
+            heapify(arr, i, 0);
+        }
+    }
+    public static void heapify(int[] arr, int n, int i){//arr,4,0  
+        int largest = i;
+        int l = 2*i+1;
+        int r = 2*i+2;
+        if(l<n && arr[l]>arr[largest]){
+            largest = l;
+        }
+        if(r<n && arr[r]>arr[largest]){
+            largest = r;
+        }
+        if(largest != i){
+            int temp = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = temp;
+            heapify(arr, n, largest);
+        }
+    }
+}

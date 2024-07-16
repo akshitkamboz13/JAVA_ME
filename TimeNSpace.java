@@ -79,11 +79,16 @@ class decimalToBinary{
 //binay to decimal
 class binaryToDecimal{
     public static void main(String[] args) {
-        int bin = 1010;
-        int dec = 0;
-        while(bin > 0){
-
+        int num = 1010;
+        int res = 0;
+        int base = 1;
+        while(num>0){
+            int rem = num%10;
+            res = res + rem*base;
+            num = num/10;
+            base = base*2;
         }
+        System.out.println("Decimal number is: "+res);
     }
 }
 
